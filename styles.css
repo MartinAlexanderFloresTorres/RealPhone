@@ -84,7 +84,7 @@ body {
     letter-spacing: -3px;
 }
 .header nav div img {
-    max-width: 150px;
+    max-width: 40px;
     width: 100%;
 }
 .header nav div ul li {
@@ -162,6 +162,7 @@ body {
 .overlay {
     position: absolute;
     top: auto;
+    left: -150px;
     border-top: 500px solid transparent;
     border-bottom: 500px solid var(--white);
     border-left: 500px solid var(--white);
@@ -174,7 +175,7 @@ body {
 .imagen-telefono {
     width: 150px;
     height: 150px;
-    margin-left: 380px;
+    margin-left: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -846,7 +847,7 @@ body {
         margin-left: 5%;
     }
     .overlay {
-        left: -20%;
+        left: -40%;
     }
 
     .circulo {
@@ -881,10 +882,20 @@ body {
         left: -43%;
     }
     .circulo {
-        left: -43%;
+        left: -33%;
     }
 }
-
+@media (max-width: 719px) {
+    .imagen-telefono {
+        margin-left: 1%;
+    }
+    .overlay {
+        left: -55%;
+    }
+    .circulo {
+        left: -40%;
+    }
+}
 @media (max-width: 780px) {
     #navegacion{
         display: flex;
@@ -962,7 +973,7 @@ body {
         padding-bottom: 20%;
     }
 }
-@media (max-width: 666px) {
+@media (max-width: 689px) {
     .max-width {
         padding-top: 15%;
     }
@@ -980,7 +991,7 @@ body {
     }
     .intro-iconos {
         border-radius: 20px;
-        left: 5%;
+        left: 3.9%;
         right: auto;
         top: 52%;
         z-index: 20;
