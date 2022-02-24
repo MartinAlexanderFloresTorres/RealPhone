@@ -943,6 +943,13 @@ body {
     .circulo {
         left: -45%;
     }
+    .intro-iconos p{
+        font-size: 15px;
+    }
+    .circulo .contenido h1,
+    .circulo .contenido p{
+        font-size: 15px;
+    }
 }
 @media (max-width: 780px) {
     #navegacion{
@@ -1047,6 +1054,7 @@ body {
     }
     .intro-iconos p{
         font-weight: bold;
+        font-size: 15px;
     }
     .imagen-telefono {
         width: auto;
@@ -1064,7 +1072,7 @@ body {
         left: -55%;
     }
     .circulo{
-        left: -55%;
+        left: -45%;
     }
 
     #footer-contenedor{
