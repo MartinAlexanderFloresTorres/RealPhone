@@ -808,6 +808,7 @@ body {
     transition: 0.8s ease all;
     transition-property: opacity, bottom;
     display: none;
+    backdrop-filter: blur(2px);
 }
 #navegacion-contenedor{
     width: 100%;
@@ -842,16 +843,63 @@ body {
 #navegacion #item a i:active{
     transform: scale(1.2);
 }
+@media (min-width: 1495px) {
+    .imagen-telefono {
+        margin-left: 28%;
+    }
+    .overlay {
+        left: 0;
+        border-bottom: 850px solid var(--white);
+    }
+
+    .circulo {
+        left: 28%;
+        font-size: 22px;
+    }
+    .intro-iconos p{
+        font-size: 18px;
+    }
+}
+@media (max-width:1488px ) {
+        .imagen-telefono {
+            margin-left: 25%;
+        }
+        .overlay {
+            left: 0;
+            border-bottom: 650px solid var(--white);
+        }
+        .circulo {
+            left: 17%;
+        }
+        .intro-iconos p{
+            font-size: 18px;
+        }
+}
+@media (max-width:1306px ) {
+    .imagen-telefono {
+        margin-left: 20%;
+    }
+    .overlay {
+        left: 0;
+        border-bottom: 550px solid var(--white);
+    }
+    .circulo {
+        left: 8%;
+    }
+    .intro-iconos p{
+        font-size: 18px;
+    }
+}
 @media (max-width: 1175px) {
     .imagen-telefono {
         margin-left: 5%;
     }
     .overlay {
-        left: -40%;
+        left: -20%;
     }
 
     .circulo {
-        left: -20%;
+        left: -5%;
     }
 }
 @media (max-width: 894px) {
@@ -874,7 +922,7 @@ body {
         grid-column: 1/ 3;
     }
 }
-@media (max-width: 818px) {
+@media (max-width: 995px) {
     .imagen-telefono {
         margin-left: 2%;
     }
@@ -885,7 +933,7 @@ body {
         left: -33%;
     }
 }
-@media (max-width: 719px) {
+@media (max-width: 729px) {
     .imagen-telefono {
         margin-left: 1%;
     }
@@ -893,7 +941,7 @@ body {
         left: -55%;
     }
     .circulo {
-        left: -40%;
+        left: -45%;
     }
 }
 @media (max-width: 780px) {
@@ -916,7 +964,7 @@ body {
         top: 0;
         z-index: 60;
         background-color: rgba(0, 0, 0, 0.7);
-        filter: saturate(2);
+        backdrop-filter: blur(3px);
     }
     .header nav div ul {
         width: 250px;
