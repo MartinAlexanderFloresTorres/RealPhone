@@ -9,14 +9,17 @@ const carrito = document.querySelector('.carrito');
 
 carritoIcono.addEventListener('click', ()=>{
     carrito.classList.toggle('active')
+    document.querySelector('body').style.overflow='hidden';
 })
 carritoClose.addEventListener('click', ()=>{
     carrito.classList.remove('active')
+    document.querySelector('body').style.overflow='auto';
 })
 menu_iconos.addEventListener("click", function () {
     menu_iconos.classList.toggle("active");
     header_nav_div_ul.classList.toggle("active");
     filter.classList.toggle('active');
+    document.querySelector('body').style.overflow='hidden';
 });
 nav_item.forEach((item) => {
     item.addEventListener("click", function () {
@@ -24,12 +27,14 @@ nav_item.forEach((item) => {
         header_nav_div_ul.classList.remove("active");
         filter.classList.remove('active');
         carrito.classList.remove('active')
+        document.querySelector('body').style.overflow='auto';
     });
 });
 filter.addEventListener("click", function () {
     menu_iconos.classList.remove("active");
     header_nav_div_ul.classList.remove("active");
     filter.classList.remove('active');
+    document.querySelector('body').style.overflow='auto';
 });
 //--------------------rotar-------------------
 const circulo = document.querySelector(".circulo");

@@ -23,6 +23,14 @@
     --size-30: 30px;
     --size-36: 36px;
 }
+::-webkit-scrollbar{
+    width: 8px;
+    background: var(--white);
+}
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    background: var(--morado);
+}
 html {
     scroll-behavior: smooth;
 }
@@ -89,6 +97,7 @@ body {
     cursor: pointer;
     padding: 5px;
     position: relative;
+    z-index: 1;
 }
 .indiceContador {
     position: absolute;
@@ -1227,6 +1236,7 @@ body {
         justify-content: center;
         transition: var(--transition);
         overflow: auto;
+        z-index: 600;
     }
     .header nav div ul::-webkit-scrollbar {
         width: 5px;
