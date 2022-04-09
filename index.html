@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
-    <link rel="shortcut icon" href="images/logo_icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo_icono.webp" type="image/x-icon">
     
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
     <header class="header">
         <nav>
             <div class="max-width">
-               <a class="logo-link" href="#inicio"><img src="images/logo_icono.png" alt="logo"><h1><span class="color-celeste">RealPhone</h1></a>
+               <a class="logo-link" href="#inicio"><img src="images/logo_icono.webp" alt="logo"><h1><span class="color-celeste">RealPhone</h1></a>
                
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
@@ -42,13 +42,29 @@
                         <i class='bx bx-x close'></i>
                     </div>
                 </ul>
+                <i class='bx bx-cart carritoIcono'> <span class="indiceContador">0</span></i>
             </div>
         </nav>
     </header> <!-- fin -->
+    <!--===== producto exitosamente notificacion =====-->
+    <div class="agregadoExitosamente">PRODUCTO AGREGADO</div>
 
     <div class="filter">
     </div>
+    <!--===== carrito =====-->
+    <section class="carrito">
+        <div class="carrito__top">
+            <h2>Carrito De Compras</h2>
+            <i class='bx bx-x carritoClose'></i>
+        </div>
+        <div class="carrito__Center">
 
+        </div>
+        <div class="carrito__bottom">
+            <p class="total">TOTAL: S/.<span class="total--numero">0</span></p>
+            <button class="pagar"><i class='bx bxs-check-shield'></i> Procesar Compra</button>
+        </div>
+    </section>
     <!-- ----------------------intro----------------- -->
     <section class="intro" id="inicio">
           
@@ -56,13 +72,13 @@
             <div class="overlay"></div>
             
             <div class="imagen-telefono">
-                <img src="images/mobile.png" alt="mobile">
+                <img src="images/T11.webp" alt="mobile">
             </div>
 
          
             <div class="circulo">
                     <div class="contenido uno">
-                        <img src="images/camera.png" alt="camera">
+                        <img src="images/camera.webp" alt="camera">
                         <div>
                             <h1>Camera</h1>
                             <p>12MP, Wide</p>
@@ -71,7 +87,7 @@
                     </div> <!-- fin -->
     
                     <div class="contenido dos">
-                        <img src="images/processor.png" alt="processor">
+                        <img src="images/processor.webp" alt="processor">
                         <div>
                             <h1>Processor</h1>
                             <p>Snapdragon</p>
@@ -80,7 +96,7 @@
                     </div> <!-- fin -->
     
                     <div class="contenido tres">
-                        <img src="images/display.png" alt="display">
+                        <img src="images/display.webp" alt="display">
                         <div>
                             <h1>Display</h1>
                             <p>6.5" Mini-Drop</p>
@@ -88,7 +104,7 @@
                         </div>
                     </div>
                     <div class="contenido cuatro">
-                        <img src="images/battery.png" alt="battery">
+                        <img src="images/battery.webp" alt="battery">
                         <div>
                             <h1>Battery- <br>life</h1>
                             <p>5000mAh, 11Hrs</p>
@@ -98,9 +114,9 @@
             </div>
 
             <div class="intro-iconos">
-                <img src="images/arrow.png" alt="arrow" class="arriba">
+                <img src="images/arrow.webp" alt="arrow" class="arriba">
                 <p>Caracteristicas</p>
-                <img src="images/arrow-abajo.png" alt="arrow" class="abajo">
+                <img src="images/arrow-abajo.webp" alt="arrow" class="abajo">
             </div>
 
         </div>
@@ -157,9 +173,9 @@
                 <div class="flex-contenido">
 
                     <div class="telefono">
-                        <img src="images/mobile.png" alt="mobile">
+                        <img src="images/mobile.webp" alt="mobile">
                         <div>
-                        <h2>Galaxar 2022</h2>
+                        <h2>Samsung A12</h2>
                         <div>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eligendi aspernatur, deleniti accusantium voluptatibus aliquid ducimus saepe quam. Iste, soluta incidunt expedita eligendi ipsa blandet
@@ -167,27 +183,30 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias harum minima in accusamus enim architecto voluptatum delectus fuga perferendis voluptatibus. Eveniet quibusdam excepturi ipsa unde fuga
                             </p>
                         </div>
-                        <a href="#" class="boton">Reservar  <i class='bx bx-cart'></i></a>
+
+                        <p class="precioAntes">Antes: S/.<span class="precioA">1500</span></p>
+                        <p class="precioAhora">Ahora: S/.<span class="precioB">1100</span></p>
+                        <a href="#" class="boton" data-id="1">Reservar  <i class='bx bx-cart'></i></a>
                         </div>                   
                     </div>
                     
                     <div class="informacion">
-                        <img src="images/battery.png" alt="battery">
+                        <img src="images/battery.webp" alt="battery">
                         <div>
                             <h1>Battery Life</h1>
                             <p>5000mAh, 11Hrs Standby</p>
                         </div>
-                        <img src="images/camera.png" alt="camera">
+                        <img src="images/camera.webp" alt="camera">
                         <div>
                             <h1>Camera</h1>
                             <p>12MP, Wide Angle Lens</p>
                         </div>
-                        <img src="images/display.png" alt="display">
+                        <img src="images/display.webp" alt="display">
                         <div>
                             <h1>Display</h1>
                             <p>6.5" Mini-Drop Fullscreen</p>
                         </div>
-                        <img src="images/processor.png" alt="processor">
+                        <img src="images/processor.webp" alt="processor">
                         <div>
                             <h1>Processor</h1>
                             <p>Snapdragon Octa-core 11nm</p>
@@ -199,9 +218,9 @@
                 <div class="flex-contenido">
 
                     <div class="telefono">
-                        <img src="images/mobile.png" alt="mobile">
+                        <img src="images/T11.webp" alt="mobile">
                         <div>
-                        <h2>Galaxar 2022</h2>
+                        <h2>Samsung A21</h2>
                         <div>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eligendi aspernatur, deleniti accusantium voluptatibus aliquid ducimus saepe quam. Iste, soluta incidunt expedita eligendi ipsa blandet
@@ -209,27 +228,29 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias harum minima in accusamus enim architecto voluptatum delectus fuga perferendis voluptatibus. Eveniet quibusdam excepturi ipsa unde fuga
                             </p>
                         </div>
-                        <a href="#" class="boton">Reservar  <i class='bx bx-cart'></i></a>
+                        <p class="precioAntes">Antes: S/.<span class="precioA">1300</span></p>
+                        <p class="precioAhora">Ahora: S/.<span class="precioB">1200</span></p>
+                        <a href="#" class="boton" data-id="2">Reservar  <i class='bx bx-cart'></i></a>
                         </div>                   
                     </div>
                     
                     <div class="informacion">
-                        <img src="images/battery.png" alt="battery">
+                        <img src="images/battery.webp" alt="battery">
                         <div>
                             <h1>Battery Life</h1>
                             <p>5000mAh, 11Hrs Standby</p>
                         </div>
-                        <img src="images/camera.png" alt="camera">
+                        <img src="images/camera.webp" alt="camera">
                         <div>
                             <h1>Camera</h1>
                             <p>12MP, Wide Angle Lens</p>
                         </div>
-                        <img src="images/display.png" alt="display">
+                        <img src="images/display.webp" alt="display">
                         <div>
                             <h1>Display</h1>
                             <p>6.5" Mini-Drop Fullscreen</p>
                         </div>
-                        <img src="images/processor.png" alt="processor">
+                        <img src="images/processor.webp" alt="processor">
                         <div>
                             <h1>Processor</h1>
                             <p>Snapdragon Octa-core 11nm</p>
@@ -242,9 +263,9 @@
                 <div class="flex-contenido">
 
                     <div class="telefono">
-                        <img src="images/mobile.png" alt="mobile">
+                        <img src="images/T12.png" alt="mobile">
                         <div>
-                        <h2>Galaxar 2022</h2>
+                        <h2>Samsung A30</h2>
                         <div>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eligendi aspernatur, deleniti accusantium voluptatibus aliquid ducimus saepe quam. Iste, soluta incidunt expedita eligendi ipsa blandet
@@ -252,27 +273,30 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias harum minima in accusamus enim architecto voluptatum delectus fuga perferendis voluptatibus. Eveniet quibusdam excepturi ipsa unde fuga
                             </p>
                         </div>
-                        <a href="#" class="boton">Reservar  <i class='bx bx-cart'></i></a>
+
+                        <p class="precioAntes">Antes: S/.<span class="precioA">2300</span></p>
+                        <p class="precioAhora">Ahora: S/.<span class="precioB">1330</span></p>
+                        <a href="#" class="boton" data-id="3">Reservar  <i class='bx bx-cart'></i></a>
                         </div>                   
                     </div>
                     
                     <div class="informacion">
-                        <img src="images/battery.png" alt="battery">
+                        <img src="images/battery.webp" alt="battery">
                         <div>
                             <h1>Battery Life</h1>
                             <p>5000mAh, 11Hrs Standby</p>
                         </div>
-                        <img src="images/camera.png" alt="camera">
+                        <img src="images/camera.webp" alt="camera">
                         <div>
                             <h1>Camera</h1>
                             <p>12MP, Wide Angle Lens</p>
                         </div>
-                        <img src="images/display.png" alt="display">
+                        <img src="images/display.webp" alt="display">
                         <div>
                             <h1>Display</h1>
                             <p>6.5" Mini-Drop Fullscreen</p>
                         </div>
-                        <img src="images/processor.png" alt="processor">
+                        <img src="images/processor.webp" alt="processor">
                         <div>
                             <h1>Processor</h1>
                             <p>Snapdragon Octa-core 11nm</p>
@@ -284,9 +308,9 @@
                 <div class="flex-contenido">
 
                     <div class="telefono">
-                        <img src="images/mobile.png" alt="mobile">
+                        <img src="images/T13.webp" alt="mobile">
                         <div>
-                        <h2>Galaxar 2022</h2>
+                        <h2>Samsung A52</h2>
                         <div>
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eligendi aspernatur, deleniti accusantium voluptatibus aliquid ducimus saepe quam. Iste, soluta incidunt expedita eligendi ipsa blandet
@@ -294,27 +318,30 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias harum minima in accusamus enim architecto voluptatum delectus fuga perferendis voluptatibus. Eveniet quibusdam excepturi ipsa unde fuga
                             </p>
                         </div>
-                        <a href="#" class="boton">Reservar  <i class='bx bx-cart'></i></a>
+
+                        <p class="precioAntes">Antes: S/.<span class="precioA">1300</span></p>
+                        <p class="precioAhora">Ahora: S/.<span class="precioB">1200</span></p>
+                        <a href="#" class="boton" data-id="4">Reservar  <i class='bx bx-cart'></i></a>
                         </div>                   
                     </div>
                     
                     <div class="informacion">
-                        <img src="images/battery.png" alt="battery">
+                        <img src="images/battery.webp" alt="battery">
                         <div>
                             <h1>Battery Life</h1>
                             <p>5000mAh, 11Hrs Standby</p>
                         </div>
-                        <img src="images/camera.png" alt="camera">
+                        <img src="images/camera.webp" alt="camera">
                         <div>
                             <h1>Camera</h1>
                             <p>12MP, Wide Angle Lens</p>
                         </div>
-                        <img src="images/display.png" alt="display">
+                        <img src="images/display.webp" alt="display">
                         <div>
                             <h1>Display</h1>
                             <p>6.5" Mini-Drop Fullscreen</p>
                         </div>
-                        <img src="images/processor.png" alt="processor">
+                        <img src="images/processor.webp" alt="processor">
                         <div>
                             <h1>Processor</h1>
                             <p>Snapdragon Octa-core 11nm</p>
@@ -341,66 +368,99 @@
                     <div class="swiper-wrapper accesorio">
                       <div class="swiper-slide item">
                           <div class="A1">
-                            <img src="images/relot2.png" alt="relot">
+                            <img src="images/relot2.webp" alt="relot">
                             <h2>Reloj H-323</h2>
-                            <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+
+                            <div>
+                                <p class="precioAntes">Antes: S/.<span class="precioA">300</span></p>
+                                <p class="precioAhora">Ahora: S/.<span class="precioB">200</span></p>
+                            </div>
+                            <a href="#" class="boton" data-id="6">Comprar <i class='bx bx-cart'></i></a>
                           </div>
                       </div> <!-- fin -->
 
 
                       <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot3.png" alt="relot">
+                          <img src="images/relot3.webp" alt="relot">
                           <h2>Reloj H-323</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">400</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">300</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="7">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
                     <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot4.png" alt="relot">
+                          <img src="images/relot4.webp" alt="relot">
                           <h2>Reloj H-323</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">380</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">280</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="8">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
                     <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot5.png" alt="relot">
+                          <img src="images/relot5.webp" alt="relot">
                           <h2>Reloj H-323</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">230</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">200</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="9">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
                     <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot6.png" alt="relot">
+                          <img src="images/relot6.webp" alt="relot">
                           <h2>Reloj H-323</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">400</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">300</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="10">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
                     <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot7.png" alt="relot">
+                          <img src="images/relot7.webp" alt="relot">
                           <h2>Reloj H-323</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">200</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">100</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="11">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
                     <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot8.png" alt="relot">
+                          <img src="images/relot8.webp" alt="relot">
                           <h2>Reloj H-323</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">310</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">220</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="12">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
                     <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot9.png" alt="relot">
+                          <img src="images/relot9.webp" alt="relot">
                           <h2>Reloj H-323</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">100</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">220</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="13">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
@@ -417,43 +477,62 @@
                     <div class="swiper-wrapper accesorio">
                       <div class="swiper-slide item">
                           <div class="A1">
-                            <img src="images/relot10.png" alt="relot">
+                            <img src="images/relot10.webp" alt="relot">
                             <h2>Reloj H-323</h2>
-                            <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                            <div>
+                                <p class="precioAntes">Antes: S/.<span class="precioA">220</span></p>
+                                <p class="precioAhora">Ahora: S/.<span class="precioB">100</span></p>
+                            </div>
+                            <a href="#" class="boton" data-id="14">Comprar <i class='bx bx-cart'></i></a>
                           </div>
                       </div> <!-- fin -->
 
 
                       <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot11.png" alt="relot">
+                          <img src="images/relot11.webp" alt="relot">
                           <h2>Relot -323 2022 <span class="color-naranja">Exclusivo</span></h2>
-                          
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">110</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">94</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="15">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
                     <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot12.png" alt="relot">
+                          <img src="images/relot12.webp" alt="relot">
                           <h2>Reloj H-323</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">90</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">50</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="16">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
                     <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot13.png" alt="relot">
+                          <img src="images/relot13.webp" alt="relot">
                           <h2>Reloj H-323</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">140</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">30</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="17">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
                     <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/relot14.png" alt="relot">
+                          <img src="images/relot14.webp" alt="relot">
                           <h2>Relot H-323</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">330</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">300</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="18">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
@@ -474,7 +553,11 @@
                           <div class="A1">
                             <img  id="mas" src="img_2/feature1.png" alt="relot">
                             <h2>Auriculares</h2>
-                            <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                            <div>
+                                <p class="precioAntes">Antes: S/.<span class="precioA">70</span></p>
+                                <p class="precioAhora">Ahora: S/.<span class="precioB">80</span></p>
+                            </div>
+                            <a href="#" class="boton" data-id="19">Comprar <i class='bx bx-cart'></i></a>
                           </div>
                       </div> <!-- fin -->
 
@@ -482,7 +565,11 @@
                         <div class="A1">
                           <img  id="mas" src="img_2/feature2.png" alt="relot">
                           <h2>Parlante D2GS</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">60</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">50</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="20">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
@@ -490,7 +577,11 @@
                         <div class="A1">
                           <img  id="mas" src="img_2/feature3.png" alt="relot">
                           <h2>Audifono portatil</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">100</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">88</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="21">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
@@ -498,7 +589,11 @@
                         <div class="A1">
                           <img  id="mas" src="img_2/feature4.png" alt="relot">
                           <h2>Reloj Digital</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">120</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">100</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="22">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
@@ -506,7 +601,11 @@
                         <div class="A1">
                           <img  id="mas" src="img_2/new1.png" alt="relot">
                           <h2>Mochila</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">200</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">120</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="23">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
@@ -514,7 +613,11 @@
                         <div class="A1">
                           <img  id="mas" src="img_2/new2.png" alt="relot">
                           <h2>Billetera</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">210</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">100</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="24">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
@@ -522,7 +625,11 @@
                         <div class="A1">
                           <img  id="mas" src="img_2/new3.png" alt="relot">
                           <h2>Gafas</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">100</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">40</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="25">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
@@ -530,7 +637,11 @@
                         <div class="A1">
                           <img  id="mas" src="img_2/new4.png" alt="relot">
                           <h2>Reloj black</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">60</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">40</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="26">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
@@ -538,7 +649,11 @@
                         <div class="A1">
                           <img  id="mas" src="img_2/new5.png" alt="relot">
                           <h2>Billetera</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">50</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">30</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="27">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
@@ -546,15 +661,23 @@
                         <div class="A1">
                           <img  id="mas" src="img_2/new6.png" alt="relot">
                           <h2>Bolso</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">100</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">80</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="28">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
 
                     <div class="swiper-slide item">
                         <div class="A1">
-                          <img src="images/exclusive.png" alt="relot" id="img-tamaño">
+                          <img src="images/exclusive.webp" alt="relot" id="img-tamaño">
                           <h2>Reloj tactil</h2>
-                          <a href="#" class="boton">Comprar <i class='bx bx-cart'></i></a>
+                          <div>
+                            <p class="precioAntes">Antes: S/.<span class="precioA">110</span></p>
+                            <p class="precioAhora">Ahora: S/.<span class="precioB">100</span></p>
+                        </div>
+                          <a href="#" class="boton" data-id="29">Comprar <i class='bx bx-cart'></i></a>
                         </div>
                     </div> <!-- fin -->
                     </div>
@@ -670,33 +793,6 @@
             </div>
         </div>
     </footer> <!-- fin -->
- <!--    
-    <i class='bx bxl-meta'></i>
-    <i class='bx bxl-github'></i>
-    <i class='bx bxl-facebook'></i>
-    <i class='bx bxl-youtube'></i>
-    <i class='bx bxl-instagram'></i>
-    <i class='bx bxl-tiktok'></i>
-    <i class='bx bxl-twitter'></i>
-    <i class='bx bxl-linkedin'></i>
-    <i class='bx bxl-gmail'></i>
-    <i class='bx bxl-discord-alt'></i>
-    <i class='bx bx-code-alt'></i>
-    <i class='bx bxl-codepen'></i>
-    <i class='bx bxl-behance'></i>
-    <i class='bx bx-menu'></i>
-    <i class='bx bx-x'></i>
-
-    <i class='bx bx-moon' ></i>
-    <i class='bx bxs-moon' ></i>
-
-    <i class='bx bx-star'></i>
-    <i class='bx bxs-star' ></i>
-
-    <i class='bx bx-chevron-up-circle'></i>
-
-    <i class='bx bxs-cog'></i>
-    <i class='bx bxs-cookie'></i> -->
 
     <!-- js -->
     <script src="main.js"></script>
@@ -709,5 +805,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
  
     <script src="swiper.js"></script>
+    <script src="carrito.js"></script>
 </body>
 </html>

@@ -3,6 +3,16 @@ const header_nav_div_ul = document.querySelector(".header nav div ul");
 const nav_item = document.querySelectorAll(".header nav div ul li a");
 const filter = document.querySelector(".filter");
 
+const carritoIcono = document.querySelector('.carritoIcono');
+const carritoClose = document.querySelector('.carritoClose');
+const carrito = document.querySelector('.carrito');
+
+carritoIcono.addEventListener('click', ()=>{
+    carrito.classList.toggle('active')
+})
+carritoClose.addEventListener('click', ()=>{
+    carrito.classList.remove('active')
+})
 menu_iconos.addEventListener("click", function () {
     menu_iconos.classList.toggle("active");
     header_nav_div_ul.classList.toggle("active");
@@ -13,6 +23,7 @@ nav_item.forEach((item) => {
         menu_iconos.classList.remove("active");
         header_nav_div_ul.classList.remove("active");
         filter.classList.remove('active');
+        carrito.classList.remove('active')
     });
 });
 filter.addEventListener("click", function () {
@@ -25,11 +36,11 @@ const circulo = document.querySelector(".circulo");
 const arriba = document.querySelector(".arriba");
 const abajo = document.querySelector(".abajo");
 
-var rotacion = circulo.style.transform;
-var guardado;
+let rotacion = circulo.style.transform;
+let guardado;
 
-var clicks = 0;
-var aumento = 0;
+let clicks = 0;
+let aumento = 0;
 arriba.addEventListener("click", function () {
     guardado = rotacion + "rotate(90deg)";
     circulo.style.transform = guardado;
@@ -41,8 +52,8 @@ arriba.addEventListener("click", function () {
     }
 });
 
-var i = 0;
-var e = 0;
+let i = 0;
+let e = 0;
 abajo.addEventListener("click", function () {
     guardado = rotacion + "rotate(-90deg)";
     circulo.style.transform = guardado;
