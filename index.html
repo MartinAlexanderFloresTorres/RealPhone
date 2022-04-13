@@ -698,26 +698,33 @@
             <div class="titulo">
                 <h3>Contactanos</h3>
             </div>
+            <div class="sk-folding-cube" id="spinerFormulario">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
             <div id="contacto-contenedor">
                 <form id="contacto-formulario">
+                    
                     <div>
-                        <input type="text" name="nombre" id="nombre" required placeholder="Nombre">
-                    </div>
-
-
-                    <div>
-                        <input type="email" name="email" id="email" required placeholder="Email">
-                    </div>
-
-
-                    <div>
-                        <input type="text" name="apellidos" id="apellidos" required placeholder="Apellidos">
+                        <input type="text" name="nombre" id="nombre"  placeholder="Nombre">
                     </div>
 
                     <div>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" required placeholder="Mensaje"></textarea>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
                     </div>
-                        <button type="submit">Enviar</button>
+
+                    <div>
+                        <input  name="email" id="email" placeholder="Email">
+                    </div>
+
+
+
+                    <div>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
                 </form>
                 <div id="contacto-imagenes">
                     <img src="img_2/home.png" alt="home">
@@ -768,8 +775,16 @@
                 <div id="footer-right">
                     <h2>Subscribe Us</h2>
                     <div>
-                        <form>
-                            <input type="email" name="email" id="email" required placeholder="Enter email address">
+                        <form id="formularioSuscripcion">
+                            <input name="email" id="email"  placeholder="Enter email address">
+                            <div class="spinner" id="spinerSuscripcion">
+                                <div class="rect1"></div>
+                                <div class="rect2"></div>
+                                <div class="rect3"></div>
+                                <div class="rect4"></div>
+                                <div class="rect5"></div>
+                            </div>
+                            <p id="mensajeFooter"></p>
                             <button type="submit">Send</button>
                         </form>
                     </div>
